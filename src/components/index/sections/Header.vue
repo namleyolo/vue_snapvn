@@ -1,20 +1,19 @@
 <template>
   <div class="container">
-      <p>Yolo</p>
-      <Header/>
+      <p>Header</p>
   </div>
 </template>
 
 <script>
 
 
-import Header from './sections/Header.vue' ;
+// import Header from './components/index/sections/Header.vue' ;
 
 
 export default {
-  name: 'Index',
-  components: {
-    Header
+  name: 'Header',
+  props: {
+    test: String
   }
 }
 </script>
