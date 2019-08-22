@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <p>Yolo</p>
-      <Header/>
+      <Header :numCorrect="numCorrect" :numTotal="numTotal" />
   </div>
 </template>
 
@@ -15,7 +15,14 @@ export default {
   name: 'Index',
   components: {
     Header
-  }
+  },
+  data() {
+    return {
+      numCorrect:0,
+      numTotal : 0
+    }
+  },
+
 }
 </script>
 

@@ -1,20 +1,25 @@
 <template>
   <div class="container">
       <p>Header</p>
+      <p>Nuber corect:: {{numCorrect}} /  {{numTotal}}</p>
+      <div class="columns">
+          <div class="column is-6 is mobile">
+              test 6
+          </div>
+          <div class="column is-6 is mobile">
+            test 6 right
+          </div>
+      </div>
   </div>
 </template>
 
 <script>
 
-
-// import Header from './components/index/sections/Header.vue' ;
-
-
 export default {
-  name: 'Header',
-  props: {
-    test: String
-  }
+  props: [
+      'numCorrect',
+      'numTotal'
+  ],
 }
 </script>
 
