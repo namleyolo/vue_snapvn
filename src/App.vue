@@ -7,6 +7,8 @@
 
 <script>
 import Index from './components/index/Index.vue'
+import data from '@/data'
+  console.log("data:::",data);
 
 export default {
   name: 'app',
